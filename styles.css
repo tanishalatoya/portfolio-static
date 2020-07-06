@@ -99,7 +99,6 @@ nav ul li:hover {
 
 @media screen and (max-width: 800px) {
     main {
-        display: grid;
         grid-template-columns: 100vw;
         grid-template-rows: 12fr auto;
         grid-template-areas: 
@@ -128,4 +127,10 @@ nav ul li:hover {
     div ul li:nth-child(even) {
         display: none;
     }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        grid-template-columns: 375px;
+    }   
 }
