@@ -18,7 +18,7 @@ div ul li:nth-child(even) {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: auto;
+    grid-row: 100vh;
     grid-template-areas: 
     'hero info';
 }
@@ -42,7 +42,7 @@ h1 {
 /* STYLING FOR BIO INFO */
 .bio-info {
     grid-area: info;
-    height: 100vh;
+    height: auto;
     padding: 3em 3em 0 3em;
 }
 
@@ -118,7 +118,7 @@ nav ul li:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 585px) {
     div ul li {
         display: block;
         margin-bottom: .3em;
