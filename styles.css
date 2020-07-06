@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
     padding: 0;
     margin: 0
 }
@@ -9,10 +10,9 @@
 /* STYLING FOR THE MAIN */
 
 main {
-    border: 2px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 100vh;
+    grid-row: auto;
     grid-template-areas: 
     'hero info';
 }
@@ -22,11 +22,49 @@ main {
 .hero-area {
     background: url(./assets/shahadat-rahman-voM1Z9cGPCU-unsplash.jpg) top center/ auto 800px no-repeat;
     color: #FFF;
-    font-size: 3em;
+    grid-area: hero;
 }
 
 h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.5em;
     padding-left: .5em;
     position: relative;
         top: 38rem;
+}
+
+/* STYING FOR BIO INFO */
+.bio-info {
+    grid-area: info;
+    height: 100vh;
+    padding: 3em 3em 0 3em;
+}
+
+.bio-info p {
+    font-size: 1.2em;
+}
+
+.bio-info h2,
+.bio-info p,
+.bio-info h3,
+.bio-info ul {
+    margin-bottom: 1em;
+}
+
+h2 span {
+    color: #FE02E8;
+}
+
+h3 {
+    text-align: center;
+}
+
+div ul li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+img {
+    height: 30px;
+    width: auto;
 }
