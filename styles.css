@@ -94,3 +94,38 @@ nav ul li {
 nav ul li:hover {
     transform: scale(1.2);
 }
+
+/* STYLING FOR SMALLER SCREENS */
+
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 12fr auto;
+        grid-template-areas: 
+        'hero'
+        'info';
+    }
+
+    .hero-area {
+        height: 40vh;
+    }
+    
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        top: 4em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div ul li {
+        display: block;
+        margin-bottom: .3em;
+        text-align: center;
+    }
+
+    div ul li:nth-child(even) {
+        display: none;
+    }
+}
