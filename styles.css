@@ -51,6 +51,10 @@ h1 {
     font-size: 1.2em;
 }
 
+.bio-info p a:hover {
+    color: red;
+}
+
 .bio-info h2,
 .bio-info p,
 .bio-info h3,
@@ -70,4 +74,23 @@ div ul li {
 img {
     height: 30px;
     width: auto;
+}
+
+/* STYLING FOR FOOTER AREA */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    margin: 2em .8em 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
 }
