@@ -5,3 +5,28 @@
     padding: 0;
     margin: 0
 }
+
+/* STYLING FOR THE MAIN */
+
+main {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 100vh;
+    grid-template-areas: 
+    'hero info';
+}
+
+/* STYLING FOR HERO AREA */
+
+.hero-area {
+    background: url(./assets/shahadat-rahman-voM1Z9cGPCU-unsplash.jpg) top center/ auto 800px no-repeat;
+    color: #FFF;
+    font-size: 3em;
+}
+
+h1 {
+    padding-left: .5em;
+    position: relative;
+        top: 38rem;
+}
