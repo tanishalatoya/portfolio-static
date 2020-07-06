@@ -7,6 +7,12 @@
     margin: 0
 }
 
+h3,
+span,
+div ul li:nth-child(even) {
+    color: #FE02E8;
+}
+
 /* STYLING FOR THE MAIN */
 
 main {
@@ -20,7 +26,7 @@ main {
 /* STYLING FOR HERO AREA */
 
 .hero-area {
-    background: url(./assets/shahadat-rahman-voM1Z9cGPCU-unsplash.jpg) top center/ auto 800px no-repeat;
+    background: url(./assets/shahadat-rahman-voM1Z9cGPCU-unsplash.jpg) top center/ cover no-repeat;
     color: #FFF;
     grid-area: hero;
 }
@@ -33,14 +39,15 @@ h1 {
         top: 38rem;
 }
 
-/* STYING FOR BIO INFO */
+/* STYLING FOR BIO INFO */
 .bio-info {
     grid-area: info;
     height: 100vh;
     padding: 3em 3em 0 3em;
 }
 
-.bio-info p {
+.bio-info p,
+.bio-info ul li {
     font-size: 1.2em;
 }
 
@@ -51,17 +58,13 @@ h1 {
     margin-bottom: 1em;
 }
 
-h2 span {
-    color: #FE02E8;
-}
-
 h3 {
     text-align: center;
 }
 
 div ul li {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 1.25em;
 }
 
 img {
